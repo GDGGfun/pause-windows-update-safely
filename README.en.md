@@ -1,36 +1,25 @@
 # Pause Windows Update Safely
 
-#### Description
-在不影响Windows Update服务的前提下，用极简的方法暂停windows更新
+## Introduction
 
-#### Software Architecture
-Software architecture description
+Pause Windows updates (almost) permanently with a minimal tweak — without disabling
+or otherwise affecting the Windows Update service.
 
-#### Installation
+## How It Works
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- Import registry entries to change the values that cap the maximum pause duration.
+- On 26H2: import registry entries to change the pause deadline (the expiration date
+  of the pause) instead.
 
-#### Instructions
+## Installation
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. Download the appropriate `.reg` file from the Releases page.
+2. Double-click the `.reg` file and confirm the dialogs (Yes / OK).
+3. Enjoy!
 
-#### Contribution
+## Usage
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+- Windows 10, and Windows 11 25H2 or earlier: download
+  `延长更新暂停时间10年.reg` ("Extend update pause to 10 years") from Releases.
+- Windows 11 26H2: download `26H2延长更新暂停至2066.reg`
+  ("26H2: extend update pause to 2066") from Releases.
